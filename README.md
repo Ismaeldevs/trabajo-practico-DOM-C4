@@ -1,25 +1,39 @@
 # Entrega del Trabajo Práctico
 
-Esta guía describe los pasos que deben seguir para subir correctamente su trabajo práctico al repositorio.
+Esta guía describe los pasos que deben seguir para subir correctamente su trabajo práctico al repositorio utilizando Forks y Pull Requests.
 
 ---
 
 ## Requisitos previos
 
 - Tener instalado [Git](https://git-scm.com/)
-- Tener acceso al repositorio de la materia
+- Tener una cuenta de GitHub
 
 ---
 
-## Pasos para la entrega
+# Pasos para la entrega
 
-### 1. Clonar el repositorio
+## 1. Hacer un Fork del repositorio
+
+Ingresar al repositorio original en GitHub y hacer clic en el botón **"Fork"** ubicado arriba a la derecha.
+
+Esto creará una copia del repositorio en su propia cuenta de GitHub.
+
+---
+
+## 2. Clonar su Fork
 
 Abrir una terminal y ejecutar el siguiente comando:
 
 ```bash
-git clone <url-del-repositorio>
+git clone <url-de-su-fork>
 ```
+
+> **Ejemplo:**
+>
+> ```bash
+> git clone https://github.com/usuario/trabajo-practico.git
+> ```
 
 Luego ingresar a la carpeta del repositorio:
 
@@ -29,7 +43,7 @@ cd <nombre-del-repositorio>
 
 ---
 
-### 2. Crear su rama personal
+## 3. Crear su rama personal
 
 Crear una rama nueva utilizando su número de legajo:
 
@@ -37,29 +51,37 @@ Crear una rama nueva utilizando su número de legajo:
 git checkout -b "legajo"
 ```
 
-> **Ejemplo:** `git checkout -b "12345"`
+> **Ejemplo:**
+>
+> ```bash
+> git checkout -b "12345"
+> ```
 
 ---
 
-### 3. Crear su carpeta personal
+## 4. Crear su carpeta personal
 
 Dentro del repositorio, crear una carpeta con el siguiente formato:
 
-```
+```text
 legajo-apellido-nombre
 ```
 
-> **Ejemplo:** `12345-garcia-juan`
+> **Ejemplo:**
+>
+> ```text
+> 12345-garcia-juan
+> ```
 
 ---
 
-### 4. Agregar el trabajo práctico resuelto
+## 5. Agregar el trabajo práctico resuelto
 
 Colocar todos los archivos de su trabajo práctico resuelto dentro de la carpeta creada en el paso anterior.
 
 ---
 
-### 5. Subir los cambios al repositorio
+## 6. Subir los cambios a su Fork
 
 Ejecutar los siguientes comandos en orden:
 
@@ -76,6 +98,7 @@ git push -u origin "nombre-de-su-rama"
 ```
 
 > **Ejemplo:**
+>
 > ```bash
 > git add "12345-garcia-juan"
 > git commit -m "trabajo practico resuelto"
@@ -84,26 +107,44 @@ git push -u origin "nombre-de-su-rama"
 
 ---
 
-### 6. Crear la Pull Request
+## 7. Crear la Pull Request
 
-1. Ingresar al repositorio en GitHub.
+1. Ingresar a su Fork en GitHub.
 2. Hacer clic en el botón **"Compare & pull request"** que aparece luego del push.
-3. Verificar que la rama base sea `main` y que la rama de comparación sea la suya.
-4. Agregar como título su **legajo, apellido y nombre**.
+3. Verificar que:
+   - La rama base sea `main` del repositorio original.
+   - La rama de comparación sea su rama personal.
+4. Agregar como título su:
+   - **legajo**
+   - **apellido**
+   - **nombre**
 5. Hacer clic en **"Create pull request"**.
 
 ---
 
-## Resumen de comandos
+# Resumen de comandos
 
 ```bash
-git clone <url-del-repositorio>
+# Clonar su fork
+git clone <url-de-su-fork>
+
+# Entrar al repositorio
 cd <nombre-del-repositorio>
+
+# Crear rama personal
 git checkout -b "legajo"
+
 # Crear carpeta y agregar archivos del TP
+
+# Agregar cambios
 git add "legajo-apellido-nombre"
+
+# Crear commit
 git commit -m "trabajo practico resuelto"
+
+# Subir rama a su fork
 git push -u origin "legajo"
+
 # Crear Pull Request desde GitHub
 ```
 
