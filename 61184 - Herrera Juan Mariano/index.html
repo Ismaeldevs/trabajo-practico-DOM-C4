@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2 DOM - Ejercicios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Trabajo Práctico DOM</h1>
+    </header>
+    
+    <main>
+        <!-- Ejercicio 1: Cambiar título -->
+        <section>
+            <h2>Ejercicio 1: Cambiar Título</h2>
+            <h3 id="titulo">Esperando cambio...</h3>
+            <button id="btnCambiar">Cambiar título</button>
+        </section>
+        
+        <!-- Ejercicio 2: Semáforo de colores -->
+        <section>
+            <h2>Ejercicio 2: Semáforo de Colores</h2>
+            <div id="cajaColor"></div>
+            <div class="botonesSemaforo">
+                <button id="btnRojo">Rojo</button>
+                <button id="btnAmarillo">Amarillo</button>
+                <button id="btnVerde">Verde</button>
+            </div>
+        </section>
+
+        <!-- Ejercicio 3: Login -->
+        <section>
+            <h2>Ejercicio 3: Iniciar Sesión</h2>
+            <div>
+                <h3>Iniciar sesión</h3>
+                <p id="estado"></p>
+                <form action="">
+                    <input id="usuario" type="text" placeholder="Usuario">
+                    <input id="contraseña" type="password" placeholder="Contraseña">
+                </form>
+            </div>
+            <button id="btnIngresar">Ingresar</button>
+        </section>
+
+        <!-- Ejercicio 4: Saludo con nombre -->
+        <section>
+            <h2>Ejercicio 4: Saludo con Nombre</h2>
+            <input id="nombre" type="text" placeholder="Escribe tu nombre aquí">
+            <p id="parrafoNombre"></p>
+        </section>
+
+        <!-- Ejercicio 5: Lista de invitados -->
+        <section>
+            <h2>Ejercicio 5: Lista de Invitados</h2>
+            <p id="aviso" style="color: red;"></p> 
+            <input type="text" id="inputNombre" placeholder="Nombre del invitado"/>
+            <button id="btnAgregar">Agregar</button>
+            <ul id="listaInvitados"></ul>
+        </section>
+
+        <!-- Ejercicio 6: Ocultar/Mostrar Card -->
+        <section>
+            <h2>Ejercicio 6: Ocultar y Mostrar Card</h2>
+            <div class="card" id="cardDinamica">
+                <h4>Información importante</h4>
+                <p>Este contenido puede mostrarse u ocultarse con el botón</p>
+            </div>
+            <button id="ocultarCardBtn">Ocultar</button>
+        </section>
+
+        <!-- Ejercicio 7: Crear perfil dinámico -->
+        <section>
+            <h2>Ejercicio 7: Crear Perfil</h2>
+            <div>
+                <p id="mensajeForm" style="color: red;"></p>
+                <form action="">
+                    <div>
+                        <label for="">Nombre de usuario</label>
+                        <input type="text" id="nombreUsuario">
+                    </div>
+                    <div>
+                        <label for="">Ingresa tu profesión</label>
+                        <input type="text" id="profesion">
+                    </div>
+                    <div>
+                        <label for="">Elige tu color favorito</label>
+                        <input class="inputColor" type="color" id="color" value="#3b82f6">
+                    </div>
+                </form>
+                <button id="crearPerfilBtn">Crear Perfil</button>
+            </div>
+            <div class="cardContenedor" id="cardContenedor"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
