@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practico DOM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <div id="header">
+            <h1>TP DOM </h1>
+        </div> 
+    
+    <main id="menu">
+
+        <div id="box">
+            <h2>Ejercicio 1</h2>
+            <div id="ej1">
+                <h3 id="titulo">Esperando cambio...</h3>
+            </div>
+            <button id="btnCambiar">Cambiar título</button>
+        </div>
+        
+        <div id="box">
+            <h2>Ejercicio 2</h2>
+            <div id="divColor"></div>
+            <div class="botonesSemaforo">
+                 <button id="btnRojo">Rojo</button>
+                 <button id="btnAmarillo">Amarillo</button>
+                 <button id="btnVerde">Verde</button>
+            </div>
+           
+        </div>
+
+        <div id="box">
+                <h2>Ejercicio 3</h2>
+                <div>
+                    <h3>Iniciar sesion</h3>
+                    <p id="estado"></p>
+                    <form action="">
+                        <input id="usuario" type="text" placeholder="Usuario">
+                        <input id="contraseña" type="password" placeholder="Contraseña">
+                    </form>
+                    
+                </div>
+                <button id="btnIngresar">Ingresar</button>
+        </div>
+
+        <div id="box">
+            <h2>Ejercicio 4</h2>
+            <input id="nombre" type="text" placeholder="Ecribi tu nombre aqui">
+            <p id="parrafoNombre"></p>
+        </div>
+
+        <div id="box">
+            <h2>Ejercicio 5</h2>
+            <p id = "aviso" style="color: red;"></p> 
+            <input type = "text" id = "inputNombre" placeholder = "Nombre del invitado"/>
+            <button id = "btnAgregar"> Agregar </button >
+        
+            <ul id = "listaInvitados" > </ul>
+        </div>
+
+        <div id="box">
+            <h2>Ejercicio 6</h2>
+            <div class="card" id="cardDinamica">
+                <h4>Informacion importante</h4>
+                <p>Este contenido puede mostrarse u ocultarse con el boton</p>
+            </div>
+            <button id="ocultarCardBtn">Ocultar</button>
+        </div>
+
+        <div id="box">
+            <h2>Ejercicio 7</h2>
+            <div>
+                <p id="mensajeForm" style="color: red;"></p>
+                <form action="">
+                    <div><label for="">Nombre de usuario</label>
+                    <input type="text" id="nombreUsuario"></div>
+                    <div><label for="">Ingresa tu profesion</label>
+                    <input type="text" id="profesion"></div>
+                    <div><label for="">Elije tu color favorito</label>
+                    <input class="inputColor" type="color" id="color" value="#3b82f6"></div>
+                </form>
+                <button id="crearPerfilBtn">Crear Perfil</button>
+            </div>
+            <div class="cardContenedor" id="cardContenedor">
+                
+            </div>
+        </div>
+    </main>
+<script src="app.js"></script>
+</body>
+</html>

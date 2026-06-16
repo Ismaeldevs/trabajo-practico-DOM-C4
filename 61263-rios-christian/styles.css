@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#header {
+    /* con heigth doy los espacios arriba y abajo para no usar hr en html*/
+    height: 35px;
+    display: flex;
+    align-items: center;
+    /* uso el justify porque con txt align no se me centra en el medio cuando uso alingn items*/
+    justify-content: center;
+    font-weight: bold;
+    /*con box shadoe estoy dando el sombreado*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    background-color: rgb(112, 9, 160);
+    /*con el border radius doy el efecto rendondeado de los bordes del div*/
+    border-radius: 15px;
+    color: #d1d5db;
+    /*aqui manejo para que el header quede fijo arriba*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*----------*/
+
+}
+#menu{
+    max-width: 900px;
+    margin: auto;
+    /* Evita que el div que uso como header tape el contenido */
+    padding-top: 100px;
+   
+}
+
+#box{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 5px;
+}
+
+main {
+    max-width: 760px;
+    margin: 32px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  
+}
+body{
+      background-color: rgb(255, 235, 247);
+}
+
+#ej1{
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 14px;
+    margin-bottom: 14px;
+}
+
+h2 {
+    color: #1e293b;
+    font-size: 22px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e9edf2;
+}
+
+h3 {
+    color: #475569;
+    font-size: 17px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+#divColor {
+    width: 500px;
+    height: 200px;
+    background-color: #ffffff;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    border: 2px solid #cbd5e1;
+}
+
+.botonesSemaforo {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 22px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2563eb;
+}
+
+
+label {
+    display: inline-block;
+    margin-bottom: 4px;
+    font-weight: 600;
+    color: #475569;
+    font-size: 14px;
+}
+
+form div {
+    margin-bottom: 14px;
+}
+
+.card {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 14px;
+}
+
+.card h4 {
+    font-size: 17px;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #64748b;
+    line-height: 1.5;
+}
+
+.cardContenedor {
+    margin-top: 18px;
+}
+
+.oculto {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 14px;
+}
+
+ul li {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 8px 14px;
+    margin-bottom: 6px;
+    color: #475569;
+}
+
+#aviso {
+    font-weight: 600;
+}
+
+#mensajeForm {
+    font-weight: 600;
+}
+
+#estado {
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: 8px;
+}
