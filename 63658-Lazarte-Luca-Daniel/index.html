@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios DOM</title>
+    <style>
+        body { font-family: system-ui, sans-serif; padding: 20px; max-width: 800px; margin: auto; }
+        section { border-bottom: 1px solid #ccc; padding-bottom: 20px; margin-bottom: 20px; }
+        .oculto { display: none; }
+        .tarjeta { background: #f0f0f0; padding: 16px; border-radius: 8px; margin-bottom: 12px; }
+        button { cursor: pointer; padding: 6px 12px; margin: 4px; border: 1px solid #ccc; border-radius: 4px; background: #fff;}
+        button:hover { background: #f9f9f9; }
+        input { padding: 6px; margin: 4px 0; border: 1px solid #ccc; border-radius: 4px; }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h1 id="titulo">Esperando cambio...</h1>
+        <button id="btnCambiar">Cambiar titulo</button>
+    </section>
+
+    <section>
+        <div id="cuadrado" style="width: 120px; height: 120px; background:gray; border-radius:8px; margin-bottom: 12px;"></div>
+        <button id="btnRojo">Rojo</button>
+        <button id="btnAmarillo">Amarillo</button>
+        <button id="btnVerde">Verde</button>
+    </section>
+
+    <section>
+        <h2>Iniciar sesion</h2>
+        <label>Usuario: </label>
+        <input type="text" id="usuario" placeholder="Tu usuario" /><br>
+        <label>Contrasenia: </label>
+        <input type="password" id="contrasena" placeholder="Tu contrasenia" /><br>
+        <button id="btnLogin">Ingresar</button>
+        <p id="mensaje" style="font-weight: bold;"></p>
+    </section>
+
+    <section>
+        <label>Tu nombre: </label>
+        <input type="text" id="inputNombre" placeholder="Escribi aqui..." />
+        <p id="preview">Escribi tu nombre arriba.</p>
+    </section>
+
+    <section>
+        <h2>Lista de invitados</h2>
+        <input type="text" id="inputNombreInvitado" placeholder="Nombre del invitado" />
+        <button id="btnAgregar">Agregar</button>
+        <p id="aviso" style="color: red;"></p>
+        <ul id="listaInvitados"></ul>
+    </section>
+
+    <section>
+        <div class="tarjeta" id="tarjeta">
+            <h3>Informacion importante</h3>
+            <p>Este contenido puede mostrarse u ocultarse con el boton.</p>
+        </div>
+        <button id="btnToggle">Ocultar</button>
+    </section>
+
+    <section>
+        <h2>Crear perfil</h2>
+        <input type="text" id="inpNombre" placeholder="Nombre" /><br>
+        <input type="text" id="inpProfesion" placeholder="Profesion" /><br>
+        <input type="color" id="inpColor" value="#3b82f6" /><br>
+        <button id="btnGenerar">Generar tarjeta</button>
+        <p id="avisoP" style="color: red;"></p>
+        <div id="resultados"></div>
+    </section>
+
+    <script src="./ejercicios/ej1.js"></script>
+    <script src="./ejercicios/ej2.js"></script>
+    <script src="./ejercicios/ej3.js"></script>
+    <script src="./ejercicios/ej4.js"></script>
+    <script src="./ejercicios/ej5.js"></script>
+    <script src="./ejercicios/ej6.js"></script>
+    <script src="./ejercicios/ej7.js"></script>
+</body>
+</html>
