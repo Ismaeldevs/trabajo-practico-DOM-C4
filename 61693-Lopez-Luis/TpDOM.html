@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./TpDOM.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div style="background:rgb(235, 235, 243)" >
+            <h2>Ejercicio 1</h2>
+            <h1 id="titulo">Esperando cambio de titulo...</h1>
+            <button id="btncambio">cambiar el titulo</button>
+            <br><br>
+        </div>
+        <h2>ejercicio 2</h2>
+        <div id="cuadrado"
+        style ="width:120px; 
+        height:120px; 
+        background:gray ;
+        border-radius:8px; 
+        margin-bottom:50px; 
+        transition: all 0.5s ease;"> 
+        </div >
+        <button id="btnrojo" style="background: red;">Rojo</button>
+        <button id="btnamarillo" style="background: yellow;">Amarillo</button>
+        <button id="btnverde" style="background: green;">Verde</button>
+
+        <div style="background:rgb(235, 235, 243);"><h2>ejercicio 3</h2>
+        <label for="">usuario</label>
+        <input type="text" id="usuario" placeholder="ingresa tu usuario">
+        <br><br>
+        <label for="">contraseña</label>
+        <input type="password" id="password" placeholder="escribe tu contraseña">
+        <br><br>
+        <button id="btnLogin">Ingresar</button>
+        <br><br>
+        <p id="mensaje" style ="font-weight:bold;"></p>
+
+        </div>
+        <h2>ejercicio 4</h2>
+        <label for="">escribe tu nombre</label>
+        <input type="text" id="inputNombre" placeholder="escribe tu nombre aqui">
+        <p id="preview"> Escribi tu nombre arriba</p>
+        <br><br>
+        <div style="background:rgb(235, 235, 243);">
+        <h2>ejercicio5</h2>
+        <input type="text" id="nombreInvitado" placeholder="escriba aqui el nombre">
+        <button id="btnagregar">Agregar</button>
+        <p id="aviso" style="color:red;"></p>
+        <ul id="listaInvitados"></ul>
+        <br><br>
+        </div>
+        
+        <h2>ejercicio 6</h2>
+        <style>
+            .oculto{display:none;}
+            .tarjeta{
+                background:#f0f0f0; 
+                padding:16px;
+                border-radius:8px; 
+                margin-bottom:12px; 
+            }
+        </style >
+        <div class ="tarjeta" id="tarjeta">
+            <h3 > Informacion importante </h3 >
+            <p> Este contenido puede mostrarse u ocultarse con el boton</p>
+        </div >
+        <button id="btnToggle"> Ocultar </button >
+        <br><br>
+
+        <h2>ejercicio 7</h2>
+        <input type ="text" id="inpNombre" placeholder ="Nombre">
+        <br><br>
+        <input type ="text" id="inpProfesion" placeholder ="Profesion"/>
+        <br><br>
+        <input type ="color" id="inpColor" value ="#3 b82f6"/>
+        <br><br>
+        <button id="btnGenerar"> Generar tarjeta </ button >
+        <p id="avisoP" style ="color:red;"></p>
+        <div id="resultados"></div>
+
+    </main> 
+</body>
+</html>
