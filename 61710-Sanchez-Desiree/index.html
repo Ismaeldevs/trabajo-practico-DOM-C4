@@ -1,0 +1,153 @@
+//EJERCICIO1//
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 1 - Cambiar el título</title>
+</head>
+<body>
+
+  <h1 id="titulo">Esperando cambio...</h1>
+  <button id="btnCambiar">Cambiar titulo</button>
+
+  <script src="ej1.js"></script>
+</body>
+</html>
+
+//EJERCICIO2//
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 2 - Semáforo</title>
+</head>
+<body>
+
+  <div id="cuadrado"
+    style="width:120px; height:120px; background:gray;
+    border-radius:8px; margin-bottom:12px;">
+  </div>
+
+  <button id="btnRojo">Rojo</button>
+  <button id="btnAmarillo">Amarillo</button>
+  <button id="btnVerde">Verde</button>
+
+  <script src="ej2.js"></script>
+</body>
+</html>
+
+//EJERCICIO3//
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 3 - Login</title>
+</head>
+<body>
+
+  <h2>Iniciar sesion</h2>
+
+  <label>Usuario:</label>
+  <input type="text" id="usuario" placeholder="Tu usuario" /><br><br>
+
+  <label>Contrasenia:</label>
+  <input type="password" id="contrasena" placeholder="Tu contrasenia" /><br><br>
+
+  <button id="btnLogin">Ingresar</button>
+
+  <p id="mensaje" style="font-weight: bold;"></p>
+
+  <script src="ej3.js"></script>
+</body>
+</html>
+
+//EJERCICIO4//
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 4 - Vista previa en tiempo real</title>
+</head>
+<body>
+
+  <label>Tu nombre:</label>
+  <input type="text" id="inputNombre" placeholder="Escribi aqui..." />
+
+  <p id="preview">Escribi tu nombre arriba.</p>
+
+  <script src="ej4.js"></script>
+</body>
+</html>
+
+//EJERCICIO5//
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 5 - Lista de invitados</title>
+</head>
+<body>
+
+  <h2>Lista de invitados</h2>
+
+  <input type="text" id="inputNombre" placeholder="Nombre del invitado" />
+  <button id="btnAgregar">Agregar</button>
+  <p id="aviso" style="color: red;"></p>
+
+  <ul id="listaInvitados"></ul>
+
+  <script src="ej5.js"></script>
+</body>
+</html>
+
+//EJERCICIO6//
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 6 - Mostrar y ocultar tarjeta</title>
+  <style>
+    .oculto { display: none; }
+    .tarjeta {
+      background: #f0f0f0;
+      padding: 16px;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="tarjeta" id="tarjeta">
+    <h3>Informacion importante</h3>
+    <p>Este contenido puede mostrarse u ocultarse con el boton.</p>
+  </div>
+
+  <button id="btnToggle">Ocultar</button>
+
+  <script src="ej6.js"></script>
+</body>
+</html>
+
+//EJERCICIO7//
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 7 - Generador de tarjetas de perfil</title>
+</head>
+<body>
+
+  <h2>Crear perfil</h2>
+
+  <input type="text" id="inpNombre" placeholder="Nombre" /><br>
+  <input type="text" id="inpProfesion" placeholder="Profesion" /><br>
+  <input type="color" id="inpColor" value="#3b82f6" /><br>
+  <button id="btnGenerar">Generar tarjeta</button>
+  <p id="avisoP" style="color: red;"></p>
+
+  <div id="resultados"></div>
+
+  <script src="ej7.js"></script>
+</body>
+</html>
