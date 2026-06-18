@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trabajo practico DOM</title>
+</head>
+<body>
+<!-- Ejercicio 1 -->
+   <script src="js/1.js" defer></script>  
+   <h1 id="titulo"> Esperando cambio ... </h1>
+   <button id="btnCambiar"> Cambiar titulo </button>
+    
+
+<!-- Ejercicio 2 -->
+ <script src="js/2.js" defer></script>
+ <div id="cuadrado" style="width: 120px; height: 120px; background: gray; border-radius: 8px; margin-bottom: 12px;">
+ </div>
+
+ <button id="btnRojo">Rojo</button>
+ <button id="btnAmarillo">Amarillo</button>
+ <button id="btnVerde">Verde</button>
+
+
+<!-- Ejercicio 3 -->
+<script src="js/3.js" defer></script>
+<h2> Iniciar sesion </h2 >
+
+ <label> Usuario : </label >
+ <input type ="text" id="usuario" placeholder ="Tu usuario" /><br><br>
+
+ <label> Contrasenia : </label >
+ <input type ="password" id="contrasena" placeholder ="Tu contrasenia" /><br><br>
+
+ <button id="btnLogin"> Ingresar </button >
+
+ <p id="mensaje" style ="font-weight : bold ;"></p>
+
+
+<!-- Ejercicio 4 -->
+<script src="js/4.js" defer></script>
+<label > Tu nombre : </label >
+ <input type ="text" id="inputNombre" placeholder ="Escribi aqui ..." />
+
+ <p id="preview"> Escribi tu nombre arriba . </p>
+
+<!-- Ejercicio 5 -->
+<script src="js/5.js" defer></script>
+<h2>Lista de invitados</h2>
+<input type="text" id="inputNombre5" placeholder="Nombre del invitado" />
+<button id="btnAgregar">Agregar</button>
+<p id="aviso" style="color: red;"></p>
+<ul id="listaInvitados"></ul>
+
+<!-- Ejercicio 6 -->
+<script src="js/6.js" defer></script>
+<style >
+ .oculto {display: none ;}
+ .tarjeta {background: #f0f0f0 ; padding : 16 px ; border-radius: 8px ; margin-bottom: 12px ;}
+ </style>
+ <div class="tarjeta" id="tarjeta">
+ <h3> Informacion importante </h3>
+ <p> Este contenido puede mostrarse u ocultarse con el boton. </p>
+ </div>
+ <button id="btnToggle"> Ocultar </button>
+
+
+<!-- Ejercicio 7 -->
+<script src="js/7.js" defer></script>
+<h2>Crear perfil</h2>
+<input type="text" id="inpNombre" placeholder="Nombre"/><br>
+<input type="text" id="inpProfesion" placeholder="Profesion" /><br>
+<input type="color" id="inpColor" value="#3b82f6"/><br>
+<button id="btnGenerar">Generar tarjeta</button>
+<p id="avisoP" style="color: red;"></p>
+<div id="resultados"></div>
+
+
+</body>
+</html>
