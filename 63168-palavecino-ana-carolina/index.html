@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>TP DOM</title>
+    <style>
+        #cuadrado {
+            width: 300px;
+            height: 50px;
+            display: inline-block;
+        }
+    #btnRojo {
+        background-color: red;
+    }
+
+    #btnAmarillo {
+        background-color: yellow;
+        color: black;
+    }
+
+    #btnVerde {
+        background-color: green;
+    }
+    #btnLogin {
+    background-color: #ff69b4;
+    color: white;
+}
+#btnAgregar {
+    background-color: #ff69b4;
+    color: white;
+}
+.oculto {
+    display: none;
+}
+#infoImportante {
+    color: rgb(233, 95, 14);
+}
+</style>
+    <script src="script.js" defer></script>
+
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+</head>
+
+
+<body>
+
+<h1>TP DOM</h1>
+
+<hr>
+
+<h2>Ejercicio 1 - Cambiar título</h2>
+
+<h1 id="titulo">Esperando cambio...</h1>
+<button id="btnCambiar">Cambiar título</button>
+<head>
+    <style>
+    h2 {
+        color: #060c29;
+        margin-bottom: 15px;
+    }
+
+    #titulo {
+        color: #020000;
+        font-size: 40px;
+        margin-bottom: 20px;
+        transition: color 0.3s ease;
+    }
+
+    #btnCambiar {
+        background-color: #db46bb;
+        color: white;
+        border: none;
+        padding: 10px 18px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.3s ease;
+    }
+
+    #btnCambiar:hover {
+        background-color: #f50dce;
+    }
+</style>
+</head>
+<hr>
+
+<h2>Ejercicio 2 - Semáforo</h2>
+<div id="cuadrado">■</div>
+<br>
+<button id="btnRojo">Rojo</button>
+<button id="btnAmarillo">Amarillo</button>
+<button id="btnVerde">Verde</button>
+
+<hr>
+
+<h2>Ejercicio 3 - Login</h2>
+
+<label>Usuario:</label>
+<input type="text" id="usuario">
+<br><br>
+
+<label>Contraseña:</label>
+<input type="password" id="contrasena">
+<br><br>
+
+<button id="btnLogin">Ingresar</button>
+
+<p id="mensaje"></p>
+
+<hr>
+
+<h2>Ejercicio 4 - Vista previa</h2>
+
+<input type="text" id="inputNombrePreview">
+<p id="preview">Escribí tu nombre arriba.</p>
+
+<hr>
+
+<h2>Ejercicio 5 - Lista de invitados</h2>
+
+<input type="text" id="inputNombreInvitado">
+<button id="btnAgregar">Agregar</button>
+
+<p id="aviso"></p>
+
+<ul id="listaInvitados"></ul>
+
+<hr>
+
+<h2>Ejercicio 6 - Mostrar/Ocultar</h2>
+
+<div id="tarjeta">
+    <h3 id = "infoImportante">INFORMACION IMPORTANTE</h3>
+    <p>Este contenido puede mostrarse u ocultarse.</p>
+</div>
+
+<button id="btnToggle">Ocultar</button>
+
+<hr>
+
+<h2>Ejercicio 7 - Generador de perfiles</h2>
+
+<input type="text" id="inpNombre" placeholder="Nombre">
+<br><br>
+
+<input type="text" id="inpProfesion" placeholder="Profesión">
+<br><br>
+
+<input type="color" id="inpColor">
+<br><br>
+
+<button id="btnGenerar">Generar tarjeta</button>
+
+<p id="avisoP"></p>
+
+<div id="resultados"></div>
+
+</body>
+</html>
+
+
