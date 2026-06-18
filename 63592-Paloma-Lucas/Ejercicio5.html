@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 5</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1a1a2e;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 24px;
+      letter-spacing: 2px;
+    }
+
+    input {
+      padding: 10px 16px;
+      border: 2px solid #333;
+      border-radius: 8px;
+      background-color: #0f3460;
+      color: white;
+      font-size: 15px;
+      outline: none;
+      width: 220px;
+    }
+
+    input:focus {
+      border-color: #e94560;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #e94560;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+      margin-left: 8px;
+    }
+
+    button:hover {
+      background-color: #c73652;
+    }
+
+    #aviso {
+      color: #f1c40f;
+      font-size: 14px;
+      margin-top: 10px;
+      min-height: 20px;
+    }
+
+    ol {
+      margin-top: 20px;
+      width: 320px;
+    }
+
+    li {
+      background-color: #16213e;
+      padding: 10px 14px;
+      border-radius: 8px;
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+
+    .btnQuitar {
+      background-color: #e94560;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 4px 10px;
+      cursor: pointer;
+      font-size: 13px;
+      margin-left: 10px;
+    }
+
+    .btnQuitar:hover {
+      background-color: #c73652;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>🎉 Lista de invitados</h2>
+
+  <div>
+    <input type="text" id="inputNombre" placeholder="Nombre del invitado" />
+    <button id="btnAgregar">Agregar</button>
+  </div>
+
+  <p id="aviso"></p>
+
+  <ol id="listaInvitados"></ol>
+
+  <script src="ej5.js"></script>
+</body>
+</html>

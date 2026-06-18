@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 7</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1a1a2e;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 24px;
+      letter-spacing: 2px;
+    }
+
+    .formulario {
+      background-color: #16213e;
+      padding: 30px;
+      border-radius: 16px;
+      width: 300px;
+    }
+
+    label {
+      font-size: 13px;
+      color: #aaa;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 16px;
+      border: 2px solid #333;
+      border-radius: 8px;
+      background-color: #0f3460;
+      color: white;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+
+    input:focus {
+      border-color: #e94560;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #e94560;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #c73652;
+    }
+
+    #avisoP {
+      color: #f1c40f;
+      font-size: 14px;
+      margin-top: 10px;
+      min-height: 20px;
+      text-align: center;
+    }
+
+    .tarjeta {
+      background-color: #16213e;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 16px;
+      width: 300px;
+    }
+
+    .tarjeta h3 {
+      margin: 0 0 6px 0;
+      font-size: 18px;
+      color: white;
+    }
+
+    .tarjeta p {
+      margin: 0 0 12px 0;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    .btnEliminar {
+      padding: 6px 14px;
+      background-color: #e94560;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .btnEliminar:hover {
+      background-color: #c73652;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>🪪 Generador de perfiles</h2>
+
+  <div class="formulario">
+
+    <label>Nombre</label>
+    <input type="text" id="inpNombre" placeholder="Tu nombre" />
+
+    <label>Profesion</label>
+    <input type="text" id="inpProfesion" placeholder="Tu profesion" />
+
+    <label>Color favorito</label>
+    <input type="color" id="inpColor" value="#e94560" />
+
+    <br><br>
+
+    <button id="btnGenerar">Generar tarjeta</button>
+
+    <p id="avisoP"></p>
+
+  </div>
+
+  <div id="resultados"></div>
+
+  <script src="ej7.js"></script>
+</body>
+</html>
